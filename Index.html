@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrightMinds Home Tuition | Classes 1–6</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Your CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <div class="logo">
+        <i class="fas fa-graduation-cap"></i>
+        <span>BrightMinds</span>
+      </div>
+
+      <!-- Hamburger Menu (Mobile) -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#subjects">Subjects</a></li>
+        <li><a href="#teachers">Teachers</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a
+            href="https://wa.me/919140571245?text=Hi!%20I%20want%20to%20book%20a%20free%20demo%20class."
+            class="btn-whatsapp"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+
+      <!-- Left: Text Content -->
+      <div class="hero-text">
+        <div class="badge">⭐ Trusted by 200+ Parents</div>
+        <h1>Best Home Tuition<br /><span>For Classes 1–6</span></h1>
+        <p class="hero-desc">
+          Personalised, caring, and affordable home tuition in your area.
+          We help every child learn better — at their own pace.
+        </p>
+
+        <!-- Trust Points -->
+        <ul class="trust-list">
+          <li><i class="fas fa-check-circle"></i> One-on-one personal attention</li>
+          <li><i class="fas fa-check-circle"></i> Experienced & friendly teachers</li>
+          <li><i class="fas fa-check-circle"></i> Flexible timings for parents</li>
+          <li><i class="fas fa-check-circle"></i> 100% free first demo class</li>
+        </ul>
+
+        <!-- CTA Buttons -->
+        <div class="hero-btns">
+          <a href="#demo-form" class="btn-primary">
+            <i class="fas fa-calendar-check"></i> Book Free Demo
+          </a>
+          <a
+            href="https://wa.me/919140571245?text=Hi!%20I%20want%20to%20book%20a%20free%20demo%20class."
+            class="btn-whatsapp-hero"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Demo Booking Form -->
+      <div class="hero-form" id="demo-form">
+        <div class="form-card">
+          <h3><i class="fas fa-rocket"></i> Book Your FREE Demo Class</h3>
+          <p class="form-sub">Fill the form — we'll call you within 2 hours!</p>
+
+          <div class="form-group">
+            <label for="parentName">Parent's Name</label>
+            <input
+              type="text"
+              id="parentName"
+              placeholder="e.g. Rahul Sharma"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="e.g. +91 XXXXXXXXXX"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="studentClass">Student's Class</label>
+            <select id="studentClass">
+              <option value="">-- Select Class --</option>
+              <option>Class 1</option>
+              <option>Class 2</option>
+              <option>Class 3</option>
+              <option>Class 4</option>
+              <option>Class 5</option>
+              <option>Class 6</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject">
+              <option value="">-- Select Subject --</option>
+              <option>Maths</option>
+              <option>English</option>
+              <option>Science</option>
+              <option>Hindi</option>
+              <option>SST</option>
+              <option>Computer Basics</option>
+              <option>All Subjects</option>
+            </select>
+          </div>
+          <button class="btn-submit" id="submitBtn" onclick="handleFormSubmit(event)">
+            <i class="fas fa-paper-plane"></i> Send via WhatsApp
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section class="why-us" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>Why Parents <span>Choose Us?</span></h2>
+        <p>We don't just teach — we make sure every child truly understands.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon" style="background:#e8f4fd;">
+            <i class="fas fa-user-graduate" style="color:#1a73e8;"></i>
+          </div>
+          <h4>Personal Attention</h4>
+          <p>Each child gets dedicated 1-on-1 time so no doubt goes unanswered.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" style="background:#fff3e0;">
+            <i class="fas fa-book-open" style="color:#f57c00;"></i>
+          </div>
+          <h4>Homework Support</h4>
+          <p>We help students complete their school homework and revise key concepts daily.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" style="background:#e8f5e9;">
+            <i class="fas fa-clipboard-check" style="color:#388e3c;"></i>
+          </div>
+          <h4>Weekly Tests</h4>
+          <p>Regular small tests keep track of progress and boost confidence.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" style="background:#fce4ec;">
+            <i class="fas fa-heart" style="color:#e91e63;"></i>
+          </div>
+          <h4>Friendly Teaching</h4>
+          <p>Our teachers create a safe, fun, and judgement-free learning environment.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" style="background:#ede7f6;">
+            <i class="fas fa-clock" style="color:#7b1fa2;"></i>
+          </div>
+          <h4>Flexible Timings</h4>
+          <p>Morning, evening, or weekend — we adjust to fit your family's schedule.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" style="background:#e0f7fa;">
+            <i class="fas fa-rupee-sign" style="color:#00838f;"></i>
+          </div>
+          <h4>Affordable Fees</h4>
+          <p>Quality education that won't burden your pocket — transparent pricing always.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SUBJECTS SECTION ========== -->
+  <section class="subjects" id="subjects">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>Subjects We <span>Teach</span></h2>
+        <p>Covering all core subjects for Classes 1 to 6 with care and expertise.</p>
+      </div>
+
+      <div class="subjects-grid">
+        <div class="subject-card">
+          <div class="subject-icon">➕</div>
+          <h4>Maths</h4>
+          <p>From counting to fractions — concepts made fun and easy.</p>
+        </div>
+        <div class="subject-card">
+          <div class="subject-icon">📖</div>
+          <h4>English</h4>
+          <p>Reading, grammar, writing — we build strong language foundations.</p>
+        </div>
+        <div class="subject-card">
+          <div class="subject-icon">🔬</div>
+          <h4>Science</h4>
+          <p>Curious minds explore nature, animals, and basic experiments.</p>
+        </div>
+        <div class="subject-card">
+          <div class="subject-icon">🇮🇳</div>
+          <h4>Hindi</h4>
+          <p>Barakhadi to essay writing — Hindi made simple and enjoyable.</p>
+        </div>
+        <div class="subject-card">
+          <div class="subject-icon">🗺️</div>
+          <h4>SST</h4>
+          <p>History, geography, civics — understanding the world around us.</p>
+        </div>
+        <div class="subject-card">
+          <div class="subject-icon">💻</div>
+          <h4>Computer Basics</h4>
+          <p>Keyboard, mouse, MS Paint, and basic software for young learners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TEACHER PROFILES ========== -->
+  <section class="teachers" id="teachers">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>Meet Your <span>Teachers</span></h2>
+        <p>Passionate, patient, and dedicated to every child's growth.</p>
+      </div>
+
+      <div class="teachers-grid">
+
+        <!-- Teacher 1 -->
+        <div class="teacher-card">
+          <div class="teacher-avatar">
+            <div class="avatar-placeholder">
+              <i class="fas fa-user-tie"></i>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Aastha Gupta</h3>
+            <div class="teacher-badge">B.sc| 3 Years Experience</div>
+            <p class="teacher-desc">
+              Aastha Mam makes every lesson feel like a story. She specialises
+              in Maths, English,Hindi and ensures every child feels confident
+              before moving to the next topic.
+            </p>
+            <div class="teacher-tags">
+              <span>Maths</span>
+              <span>English</span>
+              <span>Science</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher 2 -->
+        <div class="teacher-card">
+          <div class="teacher-avatar">
+            <div class="avatar-placeholder" style="background: linear-gradient(135deg, #ff9800, #f44336);">
+              <i class="fas fa-user-tie"></i>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3>Shruti Gupta</h3>
+            <div class="teacher-badge">B.Sc | 2 Years Experience</div>
+            <p class="teacher-desc">
+              Shruti Mam explains Science and Hindi in the most interesting way
+              using real-life examples. Parents love his friendly approach and
+              regular feedback updates.
+            </p>
+            <div class="teacher-tags">
+              <span>Hindi</span>
+              <span>SST</span>
+              <span>EVS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>What Parents <span>Say</span></h2>
+        <p>Real words from real families who trusted us with their children.</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            "My son was struggling with Maths in Class 3. After just 2 months
+            with Priya didi, he scored 95 in his school exam! Highly recommend!"
+          </p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">RS</div>
+            <div>
+              <strong>Rohini Sharma</strong>
+              <span>Mother of Class 3 Student</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            "Amit bhaiya explains everything with patience. My daughter now
+            loves Hindi class and her handwriting has improved so much!"
+          </p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">PG</div>
+            <div>
+              <strong>Pooja Gupta</strong>
+              <span>Mother of Class 5 Student</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            "Very affordable and flexible timing. Teachers are like family.
+            My two children both study here and results have improved a lot."
+          </p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">SK</div>
+            <div>
+              <strong>Suresh Kumar</strong>
+              <span>Father of Class 2 & 4 Students</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT / FOOTER ========== -->
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+
+      <div class="footer-brand">
+        <div class="logo" style="color:white;">
+          <i class="fas fa-graduation-cap"></i>
+          <span>BrightMinds</span>
+        </div>
+        <p>Helping young minds grow — one lesson at a time.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-phone"></i> 91 9140571245</p>
+        <p>
+          <i class="fab fa-whatsapp"></i>
+          <a
+            href="https://wa.me/919140571245"
+            target="_blank"
+             rel="noopener noreferrer">Chat on WhatsApp</a>
+          >Chat on WhatsApp</a>
+        </p>
+        <p><i class="fas fa-map-marker-alt"></i> Ghaziabad, Uttar Pradesh</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Why Choose Us</a></li>
+          <li><a href="#subjects">Subjects</a></li>
+          <li><a href="#teachers">Teachers</a></li>
+          <li><a href="#demo-form">Book Free Demo</a></li>
+        </ul>
+      </div>
+
+      <!-- <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a
+            href="https://wa.me/91 9140571245 "
+            target="_blank"
+            aria-label="WhatsApp"
+          ><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+    </div> -->
+
+    <div class="footer-bottom">
+      <p>© 2025 BrightMinds Home Tuition | Made with ❤️ for little learners</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Your JS file -->
+  <script src="script.js"></script>
+
+</body>
+</html>
